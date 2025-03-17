@@ -1,0 +1,85 @@
+/* ================================================================ 
+This copyright notice must be kept untouched in the stylesheet at 
+all times.
+
+The original version of this stylesheet and the associated (x)html
+is available at http://www.stunicholls.com/menu/pro_drop_2.html
+Copyright (c) 2005-2007 Stu Nicholls. All rights reserved.
+This stylesheet and the associated (x)html may be modified in any 
+way to fit your requirements.
+=================================================================== */
+#menu-container {width: auto; height: 33px; background: url(nav-down-bg.html) 0 0 repeat-x; margin-bottom: 15px;}
+#main-menu {padding: 0px;}
+.menu_sep {float: left; width: 2px; height: 35px; line-height: 35px; color: #ffebc4;}
+.navmenu_left {float: left; width: 9px; height: 35px; color: #f5f5f5; line-height: 35px; background-image: url(nav-menu-left.html);}
+.navmenu_right {float: right; width: 9px; height: 35px; color: #f5f5f5; line-height: 35px; background-image: url(nav-menu-right.html);}
+.menu_home {float: left; width: 45px; height: 35px; color: #f5f5f5; line-height: 35px;}
+.menu_home a {display:block; float:left; height: 35px; line-height: 35px;width: 45px;}
+#nav {padding:0; margin:0; list-style:none; height: 35px;z-index:500; font-family:arial, verdana, sans-serif; background-image: url(nav-bg.html);}
+#nav li.top {display:block; float:left; height: 35px;}
+#nav li a.top_link {
+    display:block;
+    float:left;
+    height: 25px;
+    line-height: 25px;
+    color:#333;
+    text-decoration:none;
+    padding:0;
+    cursor:pointer;
+    background: #f9cf66;
+    border-style: solid;
+    border-color: #fdebc5;
+    border-width: .091em .091em 0 .091em;
+    margin-top: 9px;
+}
+#nav li a.top_link span {float:left; display:block; padding:0 8px; height: 35px; font-size:13px;}
+/*#nav li a.top_link span.down {float:left; display:block; padding:0 8px; height: 43px;}*/
+#nav li a.top_link span.home {background: url(home_icon_normal.html) 50% 50% no-repeat;}
+#nav li.active a.top_link {color:#125687; font-weight: bold; background-color: #FFFFFF}
+#nav li.active a.top_link:hover {color:#125687;}
+#nav li.active a.top_link span {}
+#nav li:hover a.top_link {color:#333; background-color: #fdf6c5}
+#nav li:hover a.top_link span {}
+/* Default list styling */
+
+#nav li:hover {position:relative; z-index:200;}
+
+#nav li:hover ul.sub
+{left:1px; top:35px; border:0px solid #f1f1f1; white-space:nowrap; width:247px; height:auto; z-index:300;
+ /*opacity:0.90;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(opacity=50)";filter:alpha(opacity=90);*/
+}
+#nav li:hover ul.sub li
+{display:block; height:34px; position:relative; float:left; width:247px; font-weight:normal;text-align: left;background: #fdf6c5;border-bottom: .100em solid #ecdcaf;}
+#nav li:hover ul.sub li a
+{display:block; font-size:12px;font-weight: normal; height:34px; width:auto; line-height:34px; text-indent:10px; color:#333; text-decoration:none;}
+#nav li ul.sub li a.fly
+{background:#039AE9;}
+#nav li:hover ul.sub li a:hover 
+{color:#333; font-weight: bold;background: #f9cf66;}
+#nav li:hover ul.sub li a.fly:hover
+{background:#24b4ff; color:#f5f5f5;}
+
+
+#nav li:hover li:hover ul,
+#nav li:hover li:hover li:hover ul,
+#nav li:hover li:hover li:hover li:hover ul,
+#nav li:hover li:hover li:hover li:hover li:hover ul
+{left:-250px; top:4px; background: #000; padding:3px; border:1px solid #5c731e; white-space:nowrap; width:247px; z-index:400; height:auto;}
+
+#nav ul, 
+#nav li:hover ul ul,
+#nav li:hover li:hover ul ul,
+#nav li:hover li:hover li:hover ul ul,
+#nav li:hover li:hover li:hover li:hover ul ul
+{position:absolute; left:-9999px; top:-9999px; width:0; height:0; margin:0; padding:0; list-style:none;}
+
+#nav li:hover li:hover a.fly,
+#nav li:hover li:hover li:hover a.fly,
+#nav li:hover li:hover li:hover li:hover a.fly,
+#nav li:hover li:hover li:hover li:hover li:hover a.fly
+{background:#B9CDFE url(arrow_over.html) 95% 50% no-repeat; color:#f5f5f5; border-color:#f5f5f5;}
+
+#nav li:hover li:hover li a.fly,
+#nav li:hover li:hover li:hover li a.fly,
+#nav li:hover li:hover li:hover li:hover li a.fly
+{background:#B9CDFE url(arrow.html) 95% 50% no-repeat; color:#f5f5f5; border-color:#5c731e;}
